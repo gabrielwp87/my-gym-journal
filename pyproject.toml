@@ -1,13 +1,23 @@
 [tool.poetry]
 name = "my-gym-journal"
 version = "0.1.0"
-description = ""
+description = "Personal Project"
 authors = ["gabriel <gabrielpiazenski@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+django = "^5.0.3"
+python-decouple = "^3.8"
 
+
+[tool.poetry.group.development.dependencies]
+flake8 = "^7.0.0"
+
+
+[tool.poetry.group.tests.dependencies]
+pytest-django = "^4.8.0"
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry-core"]
